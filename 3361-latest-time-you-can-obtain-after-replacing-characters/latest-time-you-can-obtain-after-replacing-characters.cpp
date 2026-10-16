@@ -18,6 +18,7 @@ public:
             }
             else ans+=s[i];
         }
+        cout<<"hardcode";
         return ans;
     }
 };
