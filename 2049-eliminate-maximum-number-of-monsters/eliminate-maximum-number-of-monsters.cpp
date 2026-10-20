@@ -9,7 +9,7 @@ public:
         sort(r.begin(), r.end());
         int ans=0;
         for(int i=0;i<n;i++){
-            cout<<r[i]<<" ";
+            // cout<<r[i]<<" ";
             if(double(i)<r[i])ans++;
             else break;
         }
