@@ -7,7 +7,8 @@ public:
             if(nums[i]>m)m=nums[i];
         }
         for(int i=0;i<n;i++){
-            ans+=abs(nums[i]-m);
+            if(nums[i]<m)
+            ans+=m-nums[i];
         }
         return ans;
     }
