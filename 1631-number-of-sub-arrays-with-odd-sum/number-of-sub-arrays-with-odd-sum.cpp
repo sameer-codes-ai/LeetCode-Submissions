@@ -9,13 +9,14 @@ public:
         for(int i=0;i<n;i++){
             s+=arr[i];
             if(s%2==0){
-                ans=(ans+oc)%MOD;
+                ans+=oc;
                 ec++;
             }else{
-                ans=(ans+ec)%MOD;
+                ans+=ec;
                 oc++;
             }
+            ans%=MOD;
         }
-        return ans%MOD;
+        return ans;
     }
 };
